@@ -12,6 +12,7 @@ export default function App() {
 
   return (
     <SafeAreaView style={styles.container}>
+      <View style={styles.border}>
       <View style={styles.pc}>
       <Text style={styles.paragraph}>
         SPACECRAFT
@@ -41,6 +42,7 @@ export default function App() {
                 <Text style={styles.read}>
                 Read Terms and conditions
                 </Text>
+                </View>
     </SafeAreaView>
   );
 }
@@ -53,11 +55,18 @@ const styles = StyleSheet.create({
     
     
   },
+  border: {
+    borderWidth: 2,
+     alignItems: 'center',
+     height:550,
+     width:300,
+
+  },
    pc: {
 backgroundColor:'#6a5ae8',
 justifyContent:'center',
  height:200,
-    width:350,
+    width:300,
 
   },
   paragraph: {
@@ -66,7 +75,7 @@ justifyContent:'center',
     fontWeight: 'bold',
     textAlign: 'center',
     color:'white',
-    
+    marginRight:20,
    
   },
  textInput: {
