@@ -6,7 +6,7 @@ import { Card } from 'react-native-paper';
 
 
 
-export default function App() {
+export default function LoginScreen() {
   const [email, onChangeEmail] = useState('Email');
   const [password, onChangeText2] = useState('Password');
 
