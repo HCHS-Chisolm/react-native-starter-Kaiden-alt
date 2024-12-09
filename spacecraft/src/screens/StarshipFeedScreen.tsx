@@ -1,12 +1,12 @@
 import { StatusBar, StyleSheet, Text, View } from "react-native";
 
-// import { default as data } from "../../api/data.json";
+import { default as data } from "../../api/data.json";
 
 export const StarshipFeedScreen = () => {
   return (
     <View style={styles.container}>
       <View style={styles.headerContainer}>
-        {/* <Text>{JSON.stringify(data)}</Text> */}
+        <Text>{JSON.stringify(data)}</Text> 
       </View>
     </View>
   );
