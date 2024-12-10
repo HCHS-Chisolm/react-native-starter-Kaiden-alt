@@ -4,15 +4,15 @@ import {  Text, View, StyleSheet, SafeAreaView, TouchableHighlight, TextInput} f
 // You can import supported modules from npm
 import { Card } from 'react-native-paper';
 
-// or any files within the Snack
-import AssetExample from './components/AssetExample';
 
-export default function App() {
+
+export default function LoginScreen() {
   const [email, onChangeEmail] = useState('Email');
   const [password, onChangeText2] = useState('Password');
 
   return (
     <SafeAreaView style={styles.container}>
+      
       <View style={styles.pc}>
       <Text style={styles.paragraph}>
         SPACECRAFT
@@ -42,6 +42,7 @@ export default function App() {
                 <Text style={styles.read}>
                 Read Terms and conditions
                 </Text>
+                
     </SafeAreaView>
   );
 }
@@ -50,16 +51,19 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     
+     alignItems: 'center',
+     height:550,
+     width:300,
     backgroundColor: 'white',
-    padding: 8,
+    
     
   },
+  
    pc: {
 backgroundColor:'#6a5ae8',
-
 justifyContent:'center',
  height:200,
-    width:350,
+    width:300,
 
   },
   paragraph: {
@@ -68,7 +72,7 @@ justifyContent:'center',
     fontWeight: 'bold',
     textAlign: 'center',
     color:'white',
-    
+    marginLeft:20,
    
   },
  textInput: {
@@ -76,7 +80,7 @@ justifyContent:'center',
         marginTop:10,
         height: 50,
         color:'black',
-        marginLeft:40,
+        marginRight:20,
         width:250,
         textAlign:'center',
     }, 
@@ -85,7 +89,7 @@ justifyContent:'center',
         width:250,
         height: 50,
         color:'back',
-        marginLeft:40,
+         marginRight:20,
         marginTop: 25,
         textAlign:'center',
         
@@ -99,7 +103,7 @@ justifyContent:'center',
         borderColor:'black',
         width:190,
         textAlign:'center',
-        marginLeft:70,
+        marginRight:20,
         backgroundColor:'#6a5ae8',
         borderRadius:20,
          justifyContent: 'center'
@@ -113,8 +117,8 @@ justifyContent:'center',
    read: {
      color:'grey',
      fontSize:10,
-     textAlign:'center',
-     marginTop: 20,
-   }
+     marginRight:20,
+     
+   },
   
 });
